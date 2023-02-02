@@ -4,7 +4,7 @@
 	<div class="row">
 
 
-		<?php if($this->session->userdata('hak_akses') == 'admin'): ?>
+  <?php if($this->session->userdata('hak_akses') == 'pemilik'): ?>
       <div class="col-sm-4">
 			<div class="card bg-primary-light">
 				<div class="card-body">
