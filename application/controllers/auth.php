@@ -50,7 +50,7 @@ class auth extends CI_Controller
                     'hak_akses' => 'asisten' 
                 );
                 $this->session->set_userdata($sess_data);
-                    $this->load->view('asisten');
+                redirect(base_url());;
             }
         } else{
             redirect('auth');
