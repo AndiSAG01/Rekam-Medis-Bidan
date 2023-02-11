@@ -34,6 +34,7 @@ class asisten extends CI_Controller{
         $data['rekam_medis'] = $this->m_rekam_medis->count_all();
         $data['users'] = $this->m_users->count_all();
        $this->load->view('layouts/header');
+<<<<<<< HEAD
        $this->load->view('asisten',$data);
        $this->load->view('layouts/footer');
     }
@@ -41,4 +42,9 @@ class asisten extends CI_Controller{
 
 
 
+=======
+       $this->load->view('asisten_bidan/v_dashboard',$data);
+       $this->load->view('layouts/footer');
+    }
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 }

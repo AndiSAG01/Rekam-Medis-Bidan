@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="row">
   <div class="card-body">
     <h1>DASHBOARD</h1>
@@ -102,3 +103,17 @@
 </div>
   
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>view asisten</p>
+</body>
+</html>
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a

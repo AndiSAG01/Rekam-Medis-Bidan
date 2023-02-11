@@ -5,12 +5,21 @@
         <div class="card border-primary">
             <!-- tes -->
             <div class="card-body">
+<<<<<<< HEAD
                 <a href="<?= base_url('rekam_medis'); ?>" class="btn btn-secondary">Kembali</a>
                 <h5 class="card-title">Edit Data Rekam Medis</h5>
 
                 <!-- General Form Elements -->
                 <form method="post" action="<?= base_url('rekam_medis/update'); ?>">
                 <input type="hidden" name="id_rekam_medis" value="<?= $r['id_rekam_medis']; ?>">
+=======
+                <a href="<?= base_url('users'); ?>" class="btn btn-secondary">Kembali</a>
+                <h5 class="card-title">Edit Data User</h5>
+
+                <!-- General Form Elements -->
+                <form method="post" action="<?= base_url('rekam_medis/update'); ?>">
+                    <input type="hidden" name="id_rekam_medis" value="<?= $r['id_rekam_medis']; ?>">
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
                     <div class="form-group">
                         <label class="p-2" for="">tanggal</label>
                         <input type="date" name="tanggal"value="<?= $r['tanggal']; ?>" class="form-control" required>

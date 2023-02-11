@@ -14,6 +14,29 @@
       </div>
     </div>
   </div>
+<<<<<<< HEAD
+=======
+  <div class="col-sm-4">
+    <div class="card bg-primary-light">
+      <div class="card-body">
+      <i><img src="<?= base_url('assets/img/user.png')?>" style="float: right;" width="130" alt="" class="pt-4"></i>
+        <h5 class="card-title">USER</h5>
+        <p class="card-text">Total User: <?php echo $users; ?></p>
+        <a href="<?= base_url('users')?>" class="btn btn-primary">Lihat Data User</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card bg-primary-light">
+      <div class="card-body">
+      <i><img src="<?= base_url('assets/img/pegawai.png')?>" style="float: right;" width="130" alt="" class="pt-4"></i>
+        <h5 class="card-title">PEGAWAI</h5>
+        <p class="card-text">Total Pegawai : <?php echo $pegawai; ?></p>
+        <a href="<?= base_url('pegawai')?>" class="btn btn-primary">Lihat Data Pegawai</a>
+      </div>
+    </div>
+  </div>
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 </div>
   <div class="row">
   <div class="col-sm-4">

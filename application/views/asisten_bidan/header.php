@@ -10,14 +10,20 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
+<<<<<<< HEAD
     <link href="<?= base_url()?>NiceAdmin/assets/img/favicon.png" rel="icon">
 		<link href="<?= base_url()?>NiceAdmin/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+=======
+  <link href="<?= base_url()?>/assets/img/favicon.png" rel="icon">
+  <link href="<?= base_url()?>/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 
   <!-- Google Fonts -->
   <link href="https://fonts.gstatic.com" rel="preconnect">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+<<<<<<< HEAD
     <link href="<?= base_url()?>NiceAdmin/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="<?= base_url()?>NiceAdmin/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 		<link href="<?= base_url()?>NiceAdmin/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -28,6 +34,18 @@
 
 		<!-- Template Main CSS File -->
 		<link href="<?= base_url()?>NiceAdmin/assets/css/style.css" rel="stylesheet">
+=======
+  <link href="<?= base_url('NiceAdmin')?>/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<?= base_url('NiceAdmin')?>/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="<?= base_url('NiceAdmin')?>/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="<?= base_url('NiceAdmin')?>/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="<?= base_url('NiceAdmin')?>/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="<?= base_url('NiceAdmin')?>/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="<?= base_url('NiceAdmin')?>/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="<?= base_url('')?>/assets/css/style.css" rel="stylesheet">
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
   <!-- =======================================================
@@ -75,9 +93,21 @@
         </a>
       </li><!-- End Dashboard Nav -->
       <li class="nav-item">
+<<<<<<< HEAD
         <a class="nav-link " href="<?= base_url('pasien'); ?>">
           <i class="bi bi-grid"></i>
           <span>Data pasien</span>
+=======
+        <a class="nav-link " href="<?= base_url('users'); ?>">
+          <i class="bi bi-grid"></i>
+          <span>Data User</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="<?= base_url('pegawai'); ?>">
+          <i class="bi bi-grid"></i>
+          <span>Data pegawai</span>
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
         </a>
       </li>
       <li class="nav-item">
@@ -87,6 +117,15 @@
         </a>
       </li>
       <li class="nav-item">
+<<<<<<< HEAD
+=======
+        <a class="nav-link " href="<?= base_url('pasien'); ?>">
+          <i class="bi bi-grid"></i>
+          <span>Data pasien</span>
+        </a>
+      </li>
+      <li class="nav-item">
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
         <a class="nav-link " href="<?= base_url('imunisasi');?>">
           <i class="bi bi-grid"></i>
           <span>Data Imunisasi</span>
@@ -116,7 +155,10 @@
           <span>Data Periksa Kehamilan</span>
         </a>
       </li>
+<<<<<<< HEAD
 			</ul>
+=======
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
       
   </aside><!-- End Sidebar-->
 

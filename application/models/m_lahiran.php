@@ -31,6 +31,7 @@ class m_lahiran extends CI_Model{
 
     public function count_all() {
         return $this->db->count_all('lahiran');
+<<<<<<< HEAD
     }
 
     public function get_laporan_by_tanggal($tanggal_awal, $tanggal_akhir) {
@@ -42,4 +43,7 @@ class m_lahiran extends CI_Model{
         return $query->result();
     }
     
+=======
+}
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 }

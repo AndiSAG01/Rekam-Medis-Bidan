@@ -1,6 +1,10 @@
 <div class="card-body">
     <div class="card-header">
         <a href="<?= base_url('lahiran/tambah'); ?>" class="btn btn-primary">Tambah Data</a>
+<<<<<<< HEAD
+=======
+        <a href="<?= base_url('lahiran/cetak_laporan')?>" class = "btn btn-warning">Laporan</a>
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
         <h5 class="card-title"> <?php ECHO($title);?> </h5>
         <?= $this->session->flashdata('pesan'); ?>
         <!-- Table with stripped rows -->

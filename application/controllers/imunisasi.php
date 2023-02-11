@@ -141,6 +141,7 @@ class imunisasi extends CI_Controller
 		$this->load->view('imunisasi/laporan_imunisasi',$data);
 	}
 
+<<<<<<< HEAD
     public function print_laporan()
 	{
 		$data['title'] = 'LAPORAN DATA IMUNISASI';
@@ -149,5 +150,7 @@ class imunisasi extends CI_Controller
 		$this->load->view('imunisasi/laporan_imunisasi1',$data);
 	}
 
+=======
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
    
 }

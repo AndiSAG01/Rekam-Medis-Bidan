@@ -166,6 +166,7 @@ class periksa_kehamilan extends CI_Controller
 		
 		$this->load->view('periksa_kehamilan/laporan_periksa_kehamilan',$data);
 	}
+<<<<<<< HEAD
 
     public function print_laporan()
 	{
@@ -174,4 +175,6 @@ class periksa_kehamilan extends CI_Controller
 		
 		$this->load->view('periksa_kehamilan/laporan_periksa_kehamilan1',$data);
 	}
+=======
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 }

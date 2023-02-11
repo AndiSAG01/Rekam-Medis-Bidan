@@ -6,7 +6,11 @@
 <div class="card border-primary">
 <div class="card-header">
 <a href="<?= base_url('imunisasi/tambah'); ?>" class="btn btn-primary">Tambah Data</a>
+<<<<<<< HEAD
 
+=======
+<a href="<?= base_url('imunisasi/cetak_laporan')?>" class = "btn btn-warning">Laporan</a>
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 <h5 class="card-title"><?php echo($title)?></h5>
 <?= $this->session->flashdata('pesan'); ?>
 <div class="card-body">

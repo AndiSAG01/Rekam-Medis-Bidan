@@ -1,5 +1,6 @@
 <section class="content mt-2">
 
+<<<<<<< HEAD
     <div class="container">
 
     <div class="card border-primary">
@@ -7,6 +8,16 @@
             <div class="card-body">
                 <a href="<?= base_url('imunisasi'); ?>" class="btn btn-secondary">Kembali</a>
                 <h5 class="card-title"><?php echo($title)?></h5>
+=======
+    <div class="container-fluid">
+
+        <div class="card border">
+            <div class="card-header ">
+                <?= $title; ?>
+
+                <a href="<?= base_url('imunisasi'); ?>" class="btn btn-warning btn-sm float-right">Kembali</a>
+            </div>
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
             <div class="card-body">
 
             <form method="post" action="<?= base_url('imunisasi/update'); ?>">

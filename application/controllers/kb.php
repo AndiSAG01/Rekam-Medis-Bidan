@@ -153,6 +153,7 @@ class kb extends CI_Controller
 		
 		$this->load->view('kb/laporan_kb',$data);
 	}
+<<<<<<< HEAD
     public function print_laporan()
 	{
 		$data['title'] = 'LAPORAN KELUARGA BERENCANA';
@@ -160,4 +161,6 @@ class kb extends CI_Controller
 		
 		$this->load->view('kb/laporan_kb1',$data);
 	}
+=======
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 }

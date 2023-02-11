@@ -3,7 +3,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class rekam_medis extends CI_Controller
 {
+<<<<<<< HEAD
      public function __construct()
+=======
+    function __construct()
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
     {
         parent::__construct();
 
@@ -70,7 +74,10 @@ class rekam_medis extends CI_Controller
 
         $where = array('id_rekam_medis' => $id);
         $data['r'] = $this->m_rekam_medis->get_rekam();
+<<<<<<< HEAD
         
+=======
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 
         $this->load->view('layouts/header', $data);
         $this->load->view('rekam_medis/v_data_edit', $data);
@@ -107,6 +114,7 @@ class rekam_medis extends CI_Controller
 
         redirect('rekam_medis');
     }
+<<<<<<< HEAD
     public function cetak_laporan()
 	{
 		$data['title'] = 'LAPORAN REKAM MEDIS';
@@ -122,6 +130,8 @@ class rekam_medis extends CI_Controller
 		
 		$this->load->view('rekam_medis/laporan_rekam_medis1',$data);
 	}
+=======
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 
     
 }

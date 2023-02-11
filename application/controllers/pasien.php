@@ -124,6 +124,7 @@ $difference_in_seconds = abs($today_timestamp - $request_timestamp);
 	{
 		$data['title'] = 'Laporan Pasien';
 		$data['pasien'] = $this->m_pasien->tampilan_data()->result_array();
+<<<<<<< HEAD
 
 		$this->load->view('pasien/laporan_pasien',$data);
 	}
@@ -136,4 +137,10 @@ $difference_in_seconds = abs($today_timestamp - $request_timestamp);
 	}
 
     
+=======
+		
+		$this->load->view('pasien/laporan_pasien',$data);
+	}
+
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 }

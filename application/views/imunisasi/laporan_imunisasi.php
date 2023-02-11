@@ -8,7 +8,11 @@
 
 	<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.min.css">
 </head>
+<<<<<<< HEAD
 <body >
+=======
+<body>
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
     <div class="container">
     <header>
     <img src="<?= base_url()?>assets/img/logobidan.png" width = "100px" alt="Left Image" style="float: left;">

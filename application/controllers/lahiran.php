@@ -153,6 +153,7 @@ class lahiran extends CI_Controller
 		
 		$this->load->view('lahiran/laporan_lahiran',$data);
 	}
+<<<<<<< HEAD
 
     public function print_laporan()
 	{
@@ -169,4 +170,6 @@ class lahiran extends CI_Controller
         $data['lahiran'] = $this->m_lahiran->get_laporan_by_tanggal($tanggal_awal, $tanggal_akhir);
         $this->load->view('laporan/view', $data);
     }
+=======
+>>>>>>> 915d86c2b507fbf184a402d8aa16cb854bc29c4a
 }
