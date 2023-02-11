@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="<?= base_url();?>assets/css/bootstrap.min.css">
 </head>
-<body >
+<body onload="window.print()">
     <div class="container">
     <header>
     <img src="<?= base_url()?>assets/img/logobidan.png" width = "100px" alt="Left Image" style="float: left;">
@@ -18,35 +18,40 @@
         <p class = "text-center">JL.Sersan Darpin RT 01 Kel.Eka Jaya Kec. Paal Merah Jambi No.Telpon : 081210322936</p>
  <br>
 </header>
-<HR></HR>
+       <hr>
         <h2 Class = "text-center"><?php echo($title);?></h2>
 
         <table class = "table table-bordered table-sm">
             <tr>
-                    <th>NO.</th>
-                    <th>tanggal</th>
-                    <th>Nama Bayi</th>
-                    <th>Tanggal Lahir</th>
-                    <th>Nama Orang Tua</th>
-                    <th>alamat</th>
-                    <th>Jenis Imunisasi</th>
-                    <th>Pengobatan</th>
-                    <th>Keterangan</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php $no = 1;
-                foreach ($imunisasi as $r) { ?>
-                    <tr>
-                        <td class="text-center"><?= $no; ?></td>
+                    <th scope="col">NO</th>
+                    <th scope="col">Tanggal</th>
+                    <th scope="col">No.Reg</th>
+                    <th scope="col">Nama Istri</th>
+                    <th scope="col">Nama suami</th>
+                    <th scope="col">Umur Istri</th>
+                    <th scope="col">Alamat</th>
+                    <th scope="col">TD</th>
+                    <th scope="col">BB</th>
+                    <th scope="col">Metode</th>
+                    <th scope="col">Kunjungan Ulang</th>
+                    <th scope="col">NIK/NO.HP</th>
+                    <th scope="col">Keterangan</th>
+            </tr>
+            <?php $no=1; foreach ($kb as $r){?>
+            <tr>
+                <th><?= $no; ?></th>
                         <td><?= $r['tanggal']; ?></td>
-                        <td><?= $r['nama_pasien']; ?></td>
-                        <td><?= $r['tanggal_lahir']; ?></td>
-                        <td><?= $r['nama_orang_tua']; ?></td>
+                        <td><?= $r['no_regis']; ?></td>
+                        <td><?= $r['nama_istri']; ?></td>
+                        <td><?= $r['nama_suami']; ?></td>
+                        <td><?= $r['umur_istri']; ?>tahun</td>
                         <td><?= $r['alamat']; ?></td>
-                        <td><?= $r['jenis_imunisasi']; ?></td>
-                        <td><?= $r['pengobatan']; ?></td>
-                        <td><?= $r['keterangan']; ?></td>
+                        <td><?= $r['TD']; ?></td>
+                        <td><?= $r['BB']; ?></td>
+                        <td><?= $r['metode']; ?></td>
+                        <td><?= $r['kunjungan_ulang']; ?></td>
+                        <td><?= $r['NIK_NO_HP']; ?></td>
+                        <td><?= $r['keterangan']; ?></td>>
             </tr>
             <?php $no++;}?> 
         </table>

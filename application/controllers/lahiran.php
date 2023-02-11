@@ -153,4 +153,20 @@ class lahiran extends CI_Controller
 		
 		$this->load->view('lahiran/laporan_lahiran',$data);
 	}
+
+    public function print_laporan()
+	{
+		$data['title'] = 'LAPORAN DATA LAHIRAN';
+		$data['lahiran'] = $this->m_lahiran->tampilan_data()->result_array();
+		
+		$this->load->view('lahiran/laporan_lahiran1',$data);
+	}
+    public function view() {
+        $tanggal_awal = $this->input->post('tanggal_awal');
+        $tanggal_akhir = $this->input->post('tanggal_akhir');
+        
+        $data['title'] = 'Laporan Berdasarkan Tanggal';
+        $data['lahiran'] = $this->m_lahiran->get_laporan_by_tanggal($tanggal_awal, $tanggal_akhir);
+        $this->load->view('laporan/view', $data);
+    }
 }

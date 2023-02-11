@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class rekam_medis extends CI_Controller
 {
-    function __construct()
+     public function __construct()
     {
         parent::__construct();
 
@@ -70,6 +70,7 @@ class rekam_medis extends CI_Controller
 
         $where = array('id_rekam_medis' => $id);
         $data['r'] = $this->m_rekam_medis->get_rekam();
+        
 
         $this->load->view('layouts/header', $data);
         $this->load->view('rekam_medis/v_data_edit', $data);
@@ -106,6 +107,21 @@ class rekam_medis extends CI_Controller
 
         redirect('rekam_medis');
     }
+    public function cetak_laporan()
+	{
+		$data['title'] = 'LAPORAN REKAM MEDIS';
+		$data['rekam_medis'] = $this->m_rekam_medis->get_rekam();
+		
+		$this->load->view('rekam_medis/laporan_rekam_medis',$data);
+	}
+
+    public function print_laporan()
+	{
+		$data['title'] = 'LAPORAN REKAM MEDIS';
+		$data['rekam_medis'] = $this->m_rekam_medis->get_rekam();
+		
+		$this->load->view('rekam_medis/laporan_rekam_medis1',$data);
+	}
 
     
 }

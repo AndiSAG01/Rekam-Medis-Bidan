@@ -141,5 +141,13 @@ class imunisasi extends CI_Controller
 		$this->load->view('imunisasi/laporan_imunisasi',$data);
 	}
 
+    public function print_laporan()
+	{
+		$data['title'] = 'LAPORAN DATA IMUNISASI';
+		$data['imunisasi'] = $this->m_imunisasi->get_imunisasi();
+		
+		$this->load->view('imunisasi/laporan_imunisasi1',$data);
+	}
+
    
 }

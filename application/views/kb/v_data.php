@@ -2,7 +2,6 @@
     <!-- tes -->
     <div class="card-header table-responsive"  >
         <a href="<?= base_url('kb/tambah'); ?>" class="btn btn-primary">Tambah Data</a>
-        <a href="<?= base_url('kb/cetak_laporan')?>" class = "btn btn-warning">Laporan</a>
         <h5 class="card-title"><?php echo($title)?></h5>
         <?= $this->session->flashdata('pesan'); ?>
         <!-- Table with stripped rows -->

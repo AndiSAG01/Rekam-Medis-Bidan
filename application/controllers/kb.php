@@ -153,4 +153,11 @@ class kb extends CI_Controller
 		
 		$this->load->view('kb/laporan_kb',$data);
 	}
+    public function print_laporan()
+	{
+		$data['title'] = 'LAPORAN KELUARGA BERENCANA';
+		$data['kb'] = $this->m_kb->tampilan_data()->result_array();
+		
+		$this->load->view('kb/laporan_kb1',$data);
+	}
 }

@@ -36,9 +36,11 @@ class m_rekam_medis extends CI_Model{
         $this->db->from('rekam_medis');
         $this->db->join('pegawai', 'rekam_medis.id_pegawai = pegawai.id_pegawai');
         $this->db->join('pasien', 'rekam_medis.id_pasien = pasien.id_pasien');
-        $this->db->join('pemeriksaan','rekam_medis.id_pemeriksaan = pemeriksaan.hasil_pemeriksaan');
+        $this->db->join('pemeriksaan', 'rekam_medis.id_pemeriksaan = pemeriksaan.id_pemeriksaan');
         $query = $this->db->get();
         return $query->result_array();
+
+
         
         // $this->db->select('rekam_medis.*, pasien.nama_pasien as nama_pasien');
         // $this->db->from('rekam_medis');

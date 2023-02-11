@@ -1,13 +1,12 @@
 <section class="content mt-2">
 
-    <div class="container-fluid">
+    <div class="container">
 
-        <div class="card border">
-            <div class="card-header ">
-                <?= $title; ?>
-
-                <a href="<?= base_url('imunisasi'); ?>" class="btn btn-warning btn-sm float-right">Kembali</a>
-            </div>
+    <div class="card border-primary">
+            <!-- tes -->
+            <div class="card-body">
+                <a href="<?= base_url('imunisasi'); ?>" class="btn btn-secondary">Kembali</a>
+                <h5 class="card-title"><?php echo($title)?></h5>
             <div class="card-body">
 
             <form method="post" action="<?= base_url('imunisasi/update'); ?>">

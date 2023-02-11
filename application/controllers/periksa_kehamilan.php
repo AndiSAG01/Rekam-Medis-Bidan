@@ -166,4 +166,12 @@ class periksa_kehamilan extends CI_Controller
 		
 		$this->load->view('periksa_kehamilan/laporan_periksa_kehamilan',$data);
 	}
+
+    public function print_laporan()
+	{
+		$data['title'] = 'LAPORAN PERIKSA KEHAMILAN';
+		$data['periksa_kehamilan'] = $this->m_periksa_kehamilan->tampilan_data()->result_array();
+		
+		$this->load->view('periksa_kehamilan/laporan_periksa_kehamilan1',$data);
+	}
 }

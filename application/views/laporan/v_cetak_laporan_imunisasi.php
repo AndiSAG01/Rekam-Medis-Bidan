@@ -29,7 +29,7 @@
             <div class="card-body">
                 <div class="dataTableWrapper">
 
-                    <h3> Cetak Laporan Pasien </h3>
+                    <h3> Cetak Laporan Imunisasi</h3>
                     <link rel="stylesheet" type="text/css" href="<?= base_url('') ?> NiceAdmin/assets/css/style.css">
                     <link rel="stylesheet" type="text/css" href="<?= base_url('') ?> NiceAdmin/assets/css/style.css">
                     <hr class="line-title">
@@ -48,9 +48,8 @@
                                         <td style="width:40%"></td>
 
                                         <td>
-                                            <a href="<?= base_url('pasien/cetak_laporan')?>" class="btn btn-primary">Print View</a>
-                                            <a href="<?= base_url('pasien/print_laporan')?>" class="btn btn-warning">Print</a>
-                                            
+                                            <a href="<?= base_url('imunisasi/cetak_laporan')?>" class="btn btn-primary">Print View</a>
+                                            <a href="<?= base_url('imunisasi/print_laporan')?>" class="btn btn-warning">Print</a>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -77,7 +76,7 @@
                                         </td>
                                     </tr>
 
-                                    
+
                                     <tr>
                                         <td style="width:40%">Dari Tanggal :</td>
                                         <td><input type="date" name="tanggal1"></td>
