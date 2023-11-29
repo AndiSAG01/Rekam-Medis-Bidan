@@ -14,7 +14,7 @@
                 <tr>
                     <th scope="col">NO</th>
                     <th scope="col">Nama Pasien</th>
-                    <th scope="col">L/P</th>
+                    <th scope="col">Laki-laki/Perempuan</th>
                     <th scope="col">Umur</th>
                     <th scope="col">alamat</th>
                     <th scope="col">NIK</th>
